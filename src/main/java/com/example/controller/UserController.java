@@ -13,4 +13,9 @@ public class UserController {
 		return "user data";
 	}
 
+	
+	@GetMapping("/studentData")
+	public String getStudentData() {
+		return "user data";
+	}
 }
