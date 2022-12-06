@@ -59,6 +59,7 @@ public class EmployeeController {
 	public ResponseEntity<List<Employee>> getListByName(@PathVariable("name") String name) {
 
 		List<Employee> list = employeeService.getListByName(name);
+		
 		return ResponseEntity.ok().body(list);
 	}
 
